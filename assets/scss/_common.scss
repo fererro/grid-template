@@ -96,8 +96,12 @@ input {
     color: #848999;
   }
 
-  &:hover::placeholder {
+  &:hover::placeholder,
+  &:focus::placeholder {
     color: #ffffff;
+  }
+  &:focus {
+    outline: none;
   }
 }
 
